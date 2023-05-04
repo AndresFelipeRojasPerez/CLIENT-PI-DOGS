@@ -8,7 +8,7 @@ const Detail = () => {
     const [dog, setDog] = useState({});
 
      useEffect(async () => {
-        await axios.get(`http://localhost:3001/dogs/${detailId}`)
+        await axios.get(`/dogs/${detailId}`)
          .then((response) => {
         setDog(response.data);
          })

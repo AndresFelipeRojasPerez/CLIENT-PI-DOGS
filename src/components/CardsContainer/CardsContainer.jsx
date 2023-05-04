@@ -25,7 +25,7 @@ const CardsContainer = () => {
     const [ temperamentSelected, setTemperamentSelected] = useState("");
 
     useEffect (() => {
-        axios.get("http://localhost:3001/temperaments").then((response) => {
+        axios.get("/temperaments").then((response) => {
             setTemperaments(response.data.temperaments)
         });
     }, []);
