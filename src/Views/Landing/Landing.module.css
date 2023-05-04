@@ -1,0 +1,93 @@
+.main_container{
+    background-color: #efd510;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.top_container{
+    background-color: #efd510;
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.mid_container{
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    flex: 6;
+    border: 10px solid white;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 90%;
+    align-self: center;
+}
+
+.botton_container{
+    background-color:#efd510;
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.btn {
+  background: none;
+  cursor: pointer;
+  font-size: xx-large;
+  color: transparent;
+  background-image: url("/src/components/assets/hueso.png");
+  border: none;
+  background-size: cover;
+  background-position: center center;   
+  font-weight: bold;
+  height: 200px;
+  width: 400px;
+  border-style: none;
+  border-radius: 15%;
+}
+.btn:hover{
+    box-shadow: 
+    0 0 10px #efd510,
+    0 0 40px #efd510,
+    0 0 80px #efd510;
+    
+}
+
+.blackText {
+    font-size:150%;
+    font-family:fantasy;
+    color: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.yellowText {
+  font-size:150%;
+  font-family:fantasy;
+  color: #efd510;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+
+@media screen and (max-width: 600px){
+ 
+    .btn{
+        height: 150px;
+        width: 300px;
+    }
+
+    .blackText {
+        font-size:100%;
+    }
+
+    .yellowText {
+        font-size:100%;
+      }
+
+}
