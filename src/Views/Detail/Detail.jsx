@@ -8,14 +8,15 @@ const Detail = () => {
     const [dog, setDog] = useState({});
 
      useEffect(async () => {
-        await axios.get(`/dogs/${detailId}`)
-         .then((response) => {
-        setDog(response.data);
-         })
-         .catch((error) => {
-            alert(error)
-         })
+
+      try {
+         const dogDetail =  await axios.get(`/dogs/${detailId}`);
+         setDog(dogDetail.data)
+      } catch (error) {
+         alert(error)
+      }
     },[]);
+
 
     if (!Object.keys(dog).length) {
         return <h3>Loading...</h3>;

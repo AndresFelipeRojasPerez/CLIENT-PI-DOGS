@@ -2,8 +2,7 @@ import style from "./Home.module.css"
 import CardsContainer from "../../components/CardsContainer/CardsContainer";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { getDogs, getDogsByName } from "../../redux/actions";
-import SearchBar from "../../components/SearchBar/SearchBar";
+import { getDogs} from "../../redux/actions";
 import { Link } from "react-router-dom";
 
 const Home = () => {
