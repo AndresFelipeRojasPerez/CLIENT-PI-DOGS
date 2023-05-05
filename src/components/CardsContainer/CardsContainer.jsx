@@ -39,19 +39,19 @@ const CardsContainer = () => {
     const handlePage = (event) => {
         setPage(event.target.value*8);
         setCurrentPage(parseInt(event.target.value));
-        scrollTo(0,0);
+        // scrollTo(0,0);
     };
     
     const handlePagePrev = () => {
         setPage(page - 8);
         setCurrentPage((page / 8)-1);
-        scrollTo(0,0);
+        // scrollTo(0,0);
     };
 
     const handlePageNext = () => {
         setPage(page + 8);
         setCurrentPage((page / 8)+1);
-        scrollTo(0,0);
+        // scrollTo(0,0);
     };
 
     const handleFilterByOrigin = (event) => {
